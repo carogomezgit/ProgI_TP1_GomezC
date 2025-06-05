@@ -1,4 +1,21 @@
-package ejercicio.model;
+package mascotapp.model;
+
+import java.time.LocalDate;
 
 public class Turno {
+
+  // atributos
+  Mascota mascota;
+  Duenio duenio;
+  Servicio servicio;
+  LocalDate fecha;
+
+  // metodos
+  void confirmarTurno(){
+
+  }
+  void mostrarDetalle(){
+
+  }
+
 }
