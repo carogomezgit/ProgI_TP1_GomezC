@@ -23,7 +23,7 @@ public class Gato extends Mascota{
   public double getTamanio(){
     return tamanio;
   }
-  public void setTamanio(){
+  public void setTamanio(double tamanio){
     this.tamanio = tamanio;
   }
 

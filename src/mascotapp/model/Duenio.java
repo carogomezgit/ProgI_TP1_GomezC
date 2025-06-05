@@ -11,6 +11,7 @@ public class Duenio {
   public Duenio(String nombre, String telefono, Mascota[] mascotas){
     this.nombre = nombre;
     this.telefono = telefono;
+    this.mascotas = mascotas;
   }
 
 
