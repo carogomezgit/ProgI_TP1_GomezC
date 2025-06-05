@@ -5,6 +5,7 @@ public class Gato extends Mascota{
   double peso;
   double tamanio;
 
+  // metodo constructor (super)
   public Gato(String nombre, int edad, String raza, String comportamiento, String id, double peso, double tamanio){
     super(nombre, edad, raza, comportamiento, id);
     this.peso = peso;
