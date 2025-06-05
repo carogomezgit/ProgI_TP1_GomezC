@@ -30,11 +30,7 @@ public class Perro extends Mascota{
   // metodos
   @Override
   String tipoMascota() {
-    return "Perro";
+    return "Tipo de mascota: Perro \n Peso: "
+        + peso + "\n Tamano: " + tamanio;
   }
-
-
-
-
-
 }

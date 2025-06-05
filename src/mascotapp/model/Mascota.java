@@ -47,19 +47,18 @@ public abstract class Mascota {
     this.comportamiento = comportamiento;
   }
 
-
-
   // metodos
+  abstract String tipoMascota();
+
   public String toString(){
     return "Nombre de mascota: " + nombre
         + "\n Edad: " + edad
         + "\n Raza: " + raza
-        + "\n Comportamiento: " + comportamiento;
+        + "\n Comportamiento: " + comportamiento
+        + tipoMascota();
   }
 
   public void mostrarFicha(){
     System.out.println(toString());
   }
-
-  abstract String tipoMascota();
 }
