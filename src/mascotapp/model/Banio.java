@@ -10,6 +10,6 @@ public class Banio implements Servicio{
 
   @Override
   public double calcularPrecio() {
-    return ;
+    return 0;
   }
 }
