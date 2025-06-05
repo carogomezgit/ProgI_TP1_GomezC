@@ -10,6 +10,11 @@ public class Turno {
   Servicio servicio;
   LocalDate fecha;
 
+  // metodo constructor
+  public Turno(Mascota mascota, Duenio duenio, Servicio servicio, LocalDate fecha){
+    this.fecha = fecha;
+  }
+
   // metodos
   void confirmarTurno(){
 
