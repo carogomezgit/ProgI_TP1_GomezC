@@ -3,24 +3,33 @@ package mascotapp.model;
 public class Duenio {
 
   // atributos
-  String nombre;
-  String telefono;
-  Mascota[] mascotas = new Mascota[4];
+  private String nombreDuenio;
+  private String telefono;
+  private Mascota[] mascotas = new Mascota[4];
+  private int cantMascotas;
 
   // metodo constructor
-  public Duenio(String nombre, String telefono, Mascota[] mascotas){
-    this.nombre = nombre;
+  public Duenio(String nombreDuenio, String telefono){
+    this.nombreDuenio = nombreDuenio;
     this.telefono = telefono;
     this.mascotas = mascotas;
+    this.cantMascotas = 0;
   }
-
 
   // metodos
-  void agregarMascota(Mascota m){
-
+  public void agregarMascota(Mascota m){
+    if (cantMascotas < 4){
+      mascotas [cantMascotas] = m;
+    } else{
+      System.out.println("Has excedido la cantidad de mascotas a agregar");
+      System.out.println("Máximo de mascotas: 4");
+    }
   }
 
-  void mostrarMascotas(){
+  public void mostrarMascotas(){
+    for(int i = 0; i < cantMascotas; i++){
+      mascotas[i].mostrarFicha();
+    }
 
   }
 
