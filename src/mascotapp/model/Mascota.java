@@ -10,7 +10,7 @@ public abstract class Mascota {
   private final String id;
 
   // metodo constructor
-  public Mascota(String nombre, int edad, String raza, String comportamiento, String id){
+  public Mascota(String nombre, int edad, String raza, String comportamiento, String id) {
     this.nombre = nombre;
     this.edad = edad;
     this.raza = raza;
@@ -19,46 +19,51 @@ public abstract class Mascota {
   }
 
   // setters y getters
-  public String getNombre(){
+  public String getNombre() {
     return nombre;
   }
-  public void setNombre(String nombre){
+
+  public void setNombre(String nombre) {
     this.nombre = nombre;
   }
 
-  public int getEdad(){
+  public int getEdad() {
     return edad;
   }
-  public void setEdad(int edad){
+
+  public void setEdad(int edad) {
     this.edad = edad;
   }
 
-  public String getRaza(){
+  public String getRaza() {
     return raza;
   }
-  public void setRaza(String raza){
+
+  public void setRaza(String raza) {
     this.raza = raza;
   }
 
-  public String getComportamiento(){
+  public String getComportamiento() {
     return comportamiento;
   }
-  public void setComportamiento(String comportamiento){
+
+  public void setComportamiento(String comportamiento) {
     this.comportamiento = comportamiento;
   }
 
   // metodos
   abstract String tipoMascota();
 
-  public String toString(){
+  @Override
+  public String toString() {
     return "Nombre de mascota: " + nombre
-        + "\n Edad: " + edad
-        + "\n Raza: " + raza
-        + "\n Comportamiento: " + comportamiento
-        + tipoMascota();
+        + "\nEdad: " + edad
+        + "\nRaza: " + raza
+        + "\nComportamiento: " + comportamiento
+        + "\n" + tipoMascota();
   }
 
-  public void mostrarFicha(){
+  public void mostrarFicha() {
     System.out.println(toString());
   }
 }

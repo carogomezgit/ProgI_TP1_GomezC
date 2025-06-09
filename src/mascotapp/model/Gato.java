@@ -2,8 +2,8 @@ package mascotapp.model;
 
 public class Gato extends Mascota{
 
-  double peso;
-  double tamanio;
+  private double peso;
+  private double tamanio;
 
   // metodo constructor (super)
   public Gato(String nombre, int edad, String raza, String comportamiento, String id, double peso, double tamanio){
@@ -28,6 +28,12 @@ public class Gato extends Mascota{
   }
 
   // metodos
+  @Override
+  public String toString(){
+    return "Peso: " + peso
+        + "\nTamaño " + tamanio;
+  }
+
   @Override
   String tipoMascota() {
     return "Tipo de mascota: Gato";

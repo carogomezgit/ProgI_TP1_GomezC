@@ -1,33 +1,41 @@
 package mascotapp.model;
 
-public class Perro extends Mascota{
+public class Perro extends Mascota {
 
-  double peso;
-  double tamanio;
+  private double peso;
+  private double tamanio;
 
   // metodo constructor (super)
-  public Perro(String nombre, int edad, String raza, String comportamiento, String id, double peso, double tamanio){
+  public Perro(String nombre, int edad, String raza, String comportamiento, String id, double peso, double tamanio) {
     super(nombre, edad, raza, comportamiento, id);
     this.peso = peso;
     this.tamanio = tamanio;
   }
 
   // getters y setters
-  public double getPeso(){
+  public double getPeso() {
     return peso;
   }
-  public void setPeso(double peso){
+
+  public void setPeso(double peso) {
     this.peso = peso;
   }
 
-  public double getTamanio(){
+  public double getTamanio() {
     return tamanio;
   }
-  public void setTamanio(double tamanio){
+
+  public void setTamanio(double tamanio) {
     this.tamanio = tamanio;
   }
 
   // metodos
+  @Override
+  public String toString() {
+    return "Peso: " + peso
+        + "\nTamaño " + tamanio;
+  }
+
   @Override
   String tipoMascota() {
     return "Tipo de mascota: Perro";
