@@ -58,11 +58,11 @@ public class Turno {
 
   @Override
   public String toString(){
-    return "Detalle del turno:\"
-        + "Mascota: " + mascota.getNombre()
-        + "\nDueño: " + duenio.getNombre()
-        + "\nServicio: " + servicio.obtenerNombreServicio()
-        + "\nFecha: " + fecha;
+    return "Detalle del turno:\n"
+        + "Mascota: " + mascota.getNombre() + "\n"
+        + "Dueño: " + duenio.getNombre() + "\n"
+        + "Servicio: " + servicio.obtenerNombreServicio() + "\n"
+        + "Fecha: " + fecha;
   }
 
   public void mostrarDetalle() {
