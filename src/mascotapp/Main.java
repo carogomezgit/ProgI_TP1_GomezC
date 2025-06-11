@@ -33,5 +33,11 @@ public class Main {
 
     Turno turno1 = new Turno(mascota1, duenio1, limpiezaOidos, LocalDate.of(2025, 6, 20));
     Turno turno2 = new Turno(mascota2, duenio1, combo, LocalDate.of(2025, 7, 18));
+
+    // mostrar turnos
+
+
+
+
   }
 }

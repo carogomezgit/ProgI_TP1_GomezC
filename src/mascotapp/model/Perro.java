@@ -7,7 +7,7 @@ public class Perro extends Mascota {
 
   // metodo constructor (super)
   public Perro(String nombre, int edad, String raza, String comportamiento, String id, double peso, double tamanio) {
-    super(nombre, edad, raza, comportamiento, id);
+    super(id, nombre, edad, raza, comportamiento);
     this.peso = peso;
     this.tamanio = tamanio;
   }
@@ -16,7 +16,6 @@ public class Perro extends Mascota {
   public double getPeso() {
     return peso;
   }
-
   public void setPeso(double peso) {
     this.peso = peso;
   }
@@ -24,7 +23,6 @@ public class Perro extends Mascota {
   public double getTamanio() {
     return tamanio;
   }
-
   public void setTamanio(double tamanio) {
     this.tamanio = tamanio;
   }
@@ -38,6 +36,6 @@ public class Perro extends Mascota {
 
   @Override
   String tipoMascota() {
-    return "Tipo de mascota: Perro";
+    return "Perro";
   }
 }

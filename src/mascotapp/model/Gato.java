@@ -7,7 +7,7 @@ public class Gato extends Mascota{
 
   // metodo constructor (super)
   public Gato(String nombre, int edad, String raza, String comportamiento, String id, double peso, double tamanio){
-    super(nombre, edad, raza, comportamiento, id);
+    super(id, nombre, edad, raza, comportamiento);
     this.peso = peso;
     this.tamanio = tamanio;
   }
@@ -36,6 +36,6 @@ public class Gato extends Mascota{
 
   @Override
   String tipoMascota() {
-    return "Tipo de mascota: Gato";
+    return "Gato";
   }
 }

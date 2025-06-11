@@ -10,15 +10,15 @@ public abstract class Mascota {
   private final String id;
 
   // metodo constructor
-  public Mascota(String nombre, int edad, String raza, String comportamiento, String id) {
+  public Mascota(String id, String nombre, int edad, String raza, String comportamiento) {
+    this.id = id;
     this.nombre = nombre;
     this.edad = edad;
     this.raza = raza;
     this.comportamiento = comportamiento;
-    this.id = id;
   }
 
-  // setters y getters
+  // getters y setters
   public String getNombre() {
     return nombre;
   }
