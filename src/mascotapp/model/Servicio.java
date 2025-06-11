@@ -6,4 +6,5 @@ public interface Servicio {
 
   double calcularPrecio();
 
+  public String obtenerNombreServicio();
 }

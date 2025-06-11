@@ -56,7 +56,8 @@ public abstract class Mascota {
 
   @Override
   public String toString() {
-    return "Nombre de mascota: " + nombre
+    return "ID: " + id
+        + "\nNombre de mascota: " + nombre
         + "\nEdad: " + edad
         + "\nRaza: " + raza
         + "\nComportamiento: " + comportamiento

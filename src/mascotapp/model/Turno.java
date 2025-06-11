@@ -51,13 +51,13 @@ public class Turno {
   void confirmarTurno(){
     System.out.println("Confirmando turno para " );
   }
+
   void mostrarDetalle(){
     System.out.println("Detalle del turno:");
-    System.out.println("Mascota: " + mascota);
-    System.out.println("Dueño: " + duenio);
-    System.out.println("Servicio " + servicio);
+    System.out.println("Mascota: " + mascota.getNombre());
+    System.out.println("Dueño: " + duenio.getNombre());
+    System.out.println("Servicio: " + servicio.obtenerNombreServicio());
     System.out.println("Fecha " + fecha);
-
   }
 
 }
