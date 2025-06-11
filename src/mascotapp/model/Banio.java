@@ -1,6 +1,6 @@
 package mascotapp.model;
 
-public class Banio implements Servicio{
+public class Banio implements Servicio {
 
   @Override
   public void aplicarServicio() {

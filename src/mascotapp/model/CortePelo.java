@@ -1,6 +1,6 @@
 package mascotapp.model;
 
-public class CortePelo implements Servicio{
+public class CortePelo implements Servicio {
 
   @Override
   public void aplicarServicio() {

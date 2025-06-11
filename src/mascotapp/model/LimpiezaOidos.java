@@ -1,6 +1,6 @@
 package mascotapp.model;
 
-public class LimpiezaOidos implements Servicio{
+public class LimpiezaOidos implements Servicio {
 
   @Override
   public void aplicarServicio() {

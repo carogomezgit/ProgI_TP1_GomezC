@@ -11,7 +11,7 @@ public class Turno {
   private LocalDate fecha;
 
   // metodo constructor
-  public Turno(Mascota mascota, Duenio duenio, Servicio servicio, LocalDate fecha){
+  public Turno(Mascota mascota, Duenio duenio, Servicio servicio, LocalDate fecha) {
     this.mascota = mascota;
     this.duenio = duenio;
     this.servicio = servicio;
@@ -19,45 +19,53 @@ public class Turno {
   }
 
   // getters y setters
-  public Mascota getMascota(){
+  public Mascota getMascota() {
     return mascota;
   }
-  public void setMascota(Mascota mascota){
+
+  public void setMascota(Mascota mascota) {
     System.out.println(this.mascota);
   }
 
-  public Duenio getDuenio(){
+  public Duenio getDuenio() {
     return duenio;
   }
-  public void setDuenio(Duenio duenio){
+
+  public void setDuenio(Duenio duenio) {
     System.out.println(this.duenio);
   }
 
-  public Servicio getServicio(){
+  public Servicio getServicio() {
     return servicio;
   }
-  public void setServicio(Servicio servicio){
+
+  public void setServicio(Servicio servicio) {
     System.out.println(this.servicio);
   }
 
-  public LocalDate getFecha(){
+  public LocalDate getFecha() {
     return fecha;
   }
-  public void setFecha(LocalDate fecha){
+
+  public void setFecha(LocalDate fecha) {
     System.out.println(this.fecha);
   }
 
   // metodos
-  void confirmarTurno(){
-    System.out.println("Confirmando turno para " );
+  void confirmarTurno() {
+    System.out.println("Confirmando turno para " + mascota.getNombre());
   }
 
-  void mostrarDetalle(){
-    System.out.println("Detalle del turno:");
-    System.out.println("Mascota: " + mascota.getNombre());
-    System.out.println("Dueño: " + duenio.getNombre());
-    System.out.println("Servicio: " + servicio.obtenerNombreServicio());
-    System.out.println("Fecha " + fecha);
+  @Override
+  public String toString(){
+    return "Detalle del turno:\"
+        + "Mascota: " + mascota.getNombre()
+        + "\nDueño: " + duenio.getNombre()
+        + "\nServicio: " + servicio.obtenerNombreServicio()
+        + "\nFecha: " + fecha;
   }
 
+  public void mostrarDetalle() {
+    System.out.println(toString());
+  }
 }

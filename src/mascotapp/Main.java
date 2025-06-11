@@ -1,8 +1,7 @@
 package mascotapp;
 
-import mascotapp.model.*;
-
 import java.time.LocalDate;
+import mascotapp.model.*; // el import es mas simple de esta manera (checkstyle)
 
 public class Main {
   public static void main(String[] args) {
@@ -10,11 +9,16 @@ public class Main {
     // crear objetos Mascota
     Mascota mascota1 = new Perro("Shelly", 4, "Collie", "Caminar", "01", 34.2, 56.1);
     Mascota mascota2 = new Gato("Kuki", 3, "Ragdoll", "Ronronear", "02", 6.4, 24);
-    Mascota mascota3 = new Gato("Michi", 2, "Mestizo","Comer", "03",6, 22);
+    Mascota mascota3 = new Gato("Michi", 2, "Mestizo", "Comer", "03", 6, 22);
 
     // crear objetos Dueño
-    Duenio duenio1 = new Duenio("Juli","2848247723");
+    Duenio duenio1 = new Duenio("Juli", "2848247723");
     Duenio duenio2 = new Duenio("Scoops", "4738246778");
+
+    // mostrar fichas de mascotas
+    mascota1.mostrarFicha();
+    mascota2.mostrarFicha();
+    mascota3.mostrarFicha();
 
     // asignar mascotas a dueños
     duenio1.agregarMascota(mascota1);
@@ -35,9 +39,7 @@ public class Main {
     Turno turno2 = new Turno(mascota2, duenio1, combo, LocalDate.of(2025, 7, 18));
 
     // mostrar turnos
-
-
-
-
+    turno1.mostrarDetalle();
+    turno2.mostrarDetalle();
   }
 }
