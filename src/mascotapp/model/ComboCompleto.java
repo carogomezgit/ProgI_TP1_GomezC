@@ -14,6 +14,7 @@ public class ComboCompleto implements Servicio {
 
   @Override
   public void aplicarServicio() {
+    System.out.println("Aplicando Combo completo del siguiente modo:");
     banio.aplicarServicio();
     cortePelo.aplicarServicio();
     limpiezaOidos.aplicarServicio();

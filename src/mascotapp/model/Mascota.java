@@ -7,15 +7,20 @@ public abstract class Mascota {
   private int edad;
   private String raza;
   private String comportamiento;
+  private double peso;
+  private String tamanio;
   private final String id;
 
   // metodo constructor
-  public Mascota(String id, String nombre, int edad, String raza, String comportamiento) {
+  public Mascota(String id, String nombre, int edad, String raza,
+                 String comportamiento, double peso, String tamanio) {
     this.id = id;
     this.nombre = nombre;
     this.edad = edad;
     this.raza = raza;
     this.comportamiento = comportamiento;
+    this.peso = peso;
+    this.tamanio = tamanio;
   }
 
   // getters y setters
@@ -51,6 +56,23 @@ public abstract class Mascota {
     this.comportamiento = comportamiento;
   }
 
+  public double getPeso() {
+    return peso;
+  }
+
+  public void setPeso(double peso) {
+    this.peso = peso;
+  }
+
+  public String getTamanio() {
+    return tamanio;
+  }
+
+  public void setTamanio(String tamanio) {
+    this.tamanio = tamanio;
+  }
+
+
   // metodos
   abstract String tipoMascota();
 
@@ -61,7 +83,7 @@ public abstract class Mascota {
         + "\nEdad: " + edad
         + "\nRaza: " + raza
         + "\nComportamiento: " + comportamiento
-        + "\n" + tipoMascota();
+        + "\nTipo de Mascota: " + tipoMascota() + "\n";
   }
 
   public void mostrarFicha() {

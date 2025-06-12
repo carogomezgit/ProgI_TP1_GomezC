@@ -36,7 +36,8 @@ public class Duenio {
   // metodos
   @Override
   public String toString() {
-    return "Dueño: " + nombre + ", Teléfono: " + telefono;
+    return "Dueño: " + nombre + ", Teléfono: " + telefono
+        + "\nMascota/s:";
   }
 
   public void mostrarInfoDuenio() {
@@ -46,6 +47,7 @@ public class Duenio {
   public void agregarMascota(Mascota m) {
     if (cantMascotas < 4) {
       mascotas[cantMascotas] = m;
+      cantMascotas++;
     } else {
       System.out.println("Has excedido la cantidad de mascotas a agregar");
       System.out.println("Máximo de mascotas: 4");

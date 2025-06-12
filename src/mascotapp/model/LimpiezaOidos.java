@@ -4,7 +4,7 @@ public class LimpiezaOidos implements Servicio {
 
   @Override
   public void aplicarServicio() {
-    System.out.println("Aplicando servicio de Limpieza de Oídos");
+    System.out.println("Aplicando servicio de Limpieza de Oídos...");
   }
 
   @Override

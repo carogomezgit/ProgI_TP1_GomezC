@@ -52,20 +52,23 @@ public class Turno {
   }
 
   // metodos
-  void confirmarTurno() {
-    System.out.println("Confirmando turno para " + mascota.getNombre());
-  }
 
   @Override
-  public String toString(){
+  public String toString() {
     return "Detalle del turno:\n"
         + "Mascota: " + mascota.getNombre() + "\n"
         + "Dueño: " + duenio.getNombre() + "\n"
         + "Servicio: " + servicio.obtenerNombreServicio() + "\n"
-        + "Fecha: " + fecha;
+        + "Fecha: " + fecha + "\n"
+        + "Precio: " + servicio.calcularPrecio() + "\n";
   }
 
   public void mostrarDetalle() {
     System.out.println(toString());
+  }
+
+  public void confirmarTurno() {
+    System.out.println("Confirmando turno para " + mascota.getNombre());
+    mostrarDetalle();
   }
 }
