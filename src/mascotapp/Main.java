@@ -1,7 +1,16 @@
 package mascotapp;
 
 import java.time.LocalDate;
-import mascotapp.model.*; // el import es mas simple de esta manera (checkstyle)
+import mascotapp.model.Banio;
+import mascotapp.model.ComboCompleto;
+import mascotapp.model.CortePelo;
+import mascotapp.model.Duenio;
+import mascotapp.model.Gato;
+import mascotapp.model.LimpiezaOidos;
+import mascotapp.model.Mascota;
+import mascotapp.model.Perro;
+import mascotapp.model.Servicio;
+import mascotapp.model.Turno;
 
 public class Main {
   public static void main(String[] args) {
