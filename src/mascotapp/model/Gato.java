@@ -2,9 +2,6 @@ package mascotapp.model;
 
 public class Gato extends Mascota {
 
-  private double peso;
-  private double tamanio;
-
   // metodo constructor (super)
   public Gato(String id, String nombre, int edad, String raza,
               String comportamiento, double peso, String tamanio) {

@@ -12,7 +12,7 @@ public abstract class Mascota {
   private final String id;
 
   // metodo constructor
-  public Mascota(String id, String nombre, int edad, String raza,
+  protected Mascota(String id, String nombre, int edad, String raza,
                  String comportamiento, double peso, String tamanio) {
     this.id = id;
     this.nombre = nombre;

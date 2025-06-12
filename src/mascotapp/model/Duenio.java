@@ -12,7 +12,6 @@ public class Duenio {
   public Duenio(String nombre, String telefono) {
     this.nombre = nombre;
     this.telefono = telefono;
-    this.mascotas = mascotas;
     this.cantMascotas = 0;
   }
 
